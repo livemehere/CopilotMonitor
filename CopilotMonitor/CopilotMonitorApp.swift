@@ -2,10 +2,9 @@ import SwiftUI
 
 @main
 struct CopilotMonitorApp: App {
-    @State private var usageData = UsageViewModel();
+    @State private var usageData = UsageViewModel()
     var body: some Scene {
-        MenuBarExtra("\(usageData.ratio)%", systemImage: "chevron.left.forwardslash.chevron.right") {
-            // TODO
+        MenuBarExtra("\(usageData.percentage)%") {
             PopoverView(usageData: usageData)
         }
         .menuBarExtraStyle(.window)

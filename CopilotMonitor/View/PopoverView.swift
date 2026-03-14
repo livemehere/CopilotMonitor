@@ -1,16 +1,20 @@
 import SwiftUI
 
-struct PopoverView : View {
+struct PopoverView: View {
     var usageData: UsageViewModel
-    
+
     var body: some View {
         VStack {
-            Text("Used: \(usageData.ratio)")
+            ProgressView(value: usageData.ratio, total: 1) {
+                Text("Usage: \(usageData.percentage)%")
+            }
+            .tint(usageData.usageColor)
         }
         .padding()
+        .frame(maxWidth: 400)
     }
-}
 
+}
 
 #Preview {
     PopoverView(usageData: UsageViewModel())
