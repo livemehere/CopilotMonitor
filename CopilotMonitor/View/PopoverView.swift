@@ -85,42 +85,42 @@ struct PopoverView: View {
     }
 }
 
-#Preview("Idle") {
-    PopoverView(copilot: .preview())
-}
-
-#Preview("Validating") {
-    PopoverView(
-        copilot: .preview(
-            loginState: GitHubCopilotModel.LoginState.validating,
-            ratio: 0.34,
-            cookies: [
-                HTTPCookie.preview(name: "user_session", value: "user")
-            ]
-        )
-    )
-}
-
-#Preview("Completed") {
-    PopoverView(
-        copilot: .preview(
-            loginState: GitHubCopilotModel.LoginState.completed,
-            ratio: 0.341,
-            cookies: [
-                HTTPCookie.preview(name: "user_session", value: "user")
-            ],
-            entitlement: GitHubCopilotEntitlementResponse.preview()
-        )
-    )
-}
-
-#Preview("Failed") {
-    PopoverView(
-        copilot: .preview(
-            loginState: GitHubCopilotModel.LoginState.failed,
-            cookies: [
-                HTTPCookie.preview(name: "user_session", value: "expired")
-            ]
-        )
-    )
-}
+//#Preview("Idle") {
+//    PopoverView(copilot: .preview())
+//}
+//
+//#Preview("Validating") {
+//    PopoverView(
+//        copilot: .preview(
+//            loginState: GitHubCopilotModel.LoginState.validating,
+//            ratio: 0.34,
+//            cookies: [
+//                HTTPCookie.preview(name: "user_session", value: "user")
+//            ]
+//        )
+//    )
+//}
+//
+//#Preview("Completed") {
+//    PopoverView(
+//        copilot: .preview(
+//            loginState: GitHubCopilotModel.LoginState.completed,
+//            ratio: 0.341,
+//            cookies: [
+//                HTTPCookie.preview(name: "user_session", value: "user")
+//            ],
+//            entitlement: GitHubCopilotEntitlementResponse.preview()
+//        )
+//    )
+//}
+//
+//#Preview("Failed") {
+//    PopoverView(
+//        copilot: .preview(
+//            loginState: GitHubCopilotModel.LoginState.failed,
+//            cookies: [
+//                HTTPCookie.preview(name: "user_session", value: "expired")
+//            ]
+//        )
+//    )
+//}
