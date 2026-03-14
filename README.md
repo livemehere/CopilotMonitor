@@ -8,6 +8,11 @@
   <b>Monitor your GitHub Copilot usage right from your macOS menu bar</b>
 </p>
 
+<p align="center">
+  <img src="./docs/preview.png" alt="preview" width="50%" />
+</p>
+
+
 `CopilotMonitor` is a lightweight utility that lets you track your real-time GitHub Copilot usage and remaining quota directly from the macOS menu bar.
 
 ## ✨ Key Features
